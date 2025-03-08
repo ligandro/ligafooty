@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: ligafooty
+Version: 0.2
+Summary: Python Package to work with football tracking data
+Author: Ligandro S.Y.
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: mplsoccer
+Requires-Dist: highlight_text
+Requires-Dist: scipy
+Requires-Dist: pillow
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+mplsoccer
+highlight_text
+scipy
+pillow
