@@ -11,7 +11,7 @@ Currently only data from the provider Metrica Sports is supported. Download from
 
 ## Package functions structure
 <p align="center">
-  <img width="100%" src="./images/fstructure.png"> &nbsp &nbsp
+  <img width="50%" src="./images/fstructure.png"> &nbsp &nbsp
 </p>
 
 ## Use
