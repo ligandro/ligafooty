@@ -67,7 +67,9 @@ from ligafooty.liga import liga_frame
 
 liga_frame(tidy_data,330,poss_data,method="base",save=False) # Saved as frame_xyz.png in images folder
 ```
-
+<p align="center">
+  <img width="100%" src="./images/frame_330.png"> &nbsp &nbsp
+</p>
 ### 4. 2D animation for a range of frames
 
 ```python
