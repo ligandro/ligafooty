@@ -65,7 +65,8 @@ poss_data = pd.concat([home_poss, away_poss]) # Combine home and away possesion 
 ```python
 from ligafooty.liga import liga_frame
 
-liga_frame(tidy_data,330,poss_data,method="base",save=False) # Saved as frame_xyz.png in images folder
+# methods availabele : base,convexhull,voronoi,delaunay
+liga_frame(tidy_data,330,poss_data,method="voronoi",save=False) # Saved as frame_xyz.png in images folder
 ```
 <p align="center">
   <img width="100%" src="./images/frame_330.jpg"> &nbsp &nbsp
@@ -80,6 +81,7 @@ frame_start =120990
 frame_end =121060
 
 # On avg it takes 1 second to process 2-3 frames. So keep in mind to process 50-100 at once. 25 frames make up 1 second of video
+# methods availabele : base,convexhull,voronoi,delaunay
 liga_animate(tidy_data,poss_data,frame_start,frame_end,mode='voronoi',video_writer="gif",save=True) # Saved as animation.gif in videos folder
 ```
 ![LigaFooty Animation](videos/animation.gif)
