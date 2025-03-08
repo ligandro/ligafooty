@@ -9,6 +9,11 @@ ligafooty is a Python package designed for **football tracking data visualizatio
 ## Data Source
 Currently only data from the provider Metrica Sports is supported. Download from this [@link](https://github.com/metrica-sports/sample-data)
 
+## Package functions structure
+<p align="center">
+  <img width="100%" src="./images/fsctructure.png"> &nbsp &nbsp
+</p>
+
 ## Use
 You can directly run the demo.ipynb jupyter notebook after package installation
 
@@ -183,6 +188,10 @@ ligafooty requires the following packages:
 ```sh
 pip install numpy pandas matplotlib mplsoccer highlight_text scipy pillow
 ```
+
+## 🛠 Coming Soon
+Other data sources
+
 
 ## 🤝 Contributing
 Personal project currently. Limited data availibility so no use of this project for real world analysis as of now. Will try to ingest other data sources and then maybe contributions maye be possible.
