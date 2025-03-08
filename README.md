@@ -109,6 +109,7 @@ liga_player_heatmap(tidy_data,poss_data, target_team="away", target_player=20)
 <p align="center">
   <img width="100%" src="./images/20_op.png"> &nbsp &nbsp
 </p>
+
 ### 7.Player movement stats calculation and visualization
 
 ```python
@@ -180,10 +181,10 @@ pip install numpy pandas matplotlib mplsoccer highlight_text scipy pillow
 ```
 
 ## 🤝 Contributing
-Personal project currently. Limited data availibility so no use of this project for real world analysis as of now. Will try to injest other data sources and then maybe contributions maye be possible.
+Personal project currently. Limited data availibility so no use of this project for real world analysis as of now. Will try to ingest other data sources and then maybe contributions maye be possible.
 
 ## 📄 License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. 
 
 ## 🌟 Support & Contact
 For any questions or feature requests, feel free to reach out:
