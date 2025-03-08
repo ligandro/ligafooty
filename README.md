@@ -70,6 +70,7 @@ liga_frame(tidy_data,330,poss_data,method="base",save=False) # Saved as frame_xy
 <p align="center">
   <img width="100%" src="./images/frame_330.jpg"> &nbsp &nbsp
 </p>
+
 ### 4. 2D animation for a range of frames
 
 ```python
@@ -93,6 +94,7 @@ liga_plot_poss(tidy_data, poss_data, target_team ="away",save=True) # saved as t
 <p align="center">
   <img width="100%" src="./images/away_possession.png"> &nbsp &nbsp
 </p>
+
 ### 6. Player heatmap by ON/OFF ball possession states
 
 ```python
