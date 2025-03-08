@@ -1,39 +1,89 @@
-# Spotifier
+# LigaFooty
 
-## Overview
-Simple Python script that generates a table of your song listening history using data from **Spotipy API**.
+![LigaFooty Logo](https://your-logo-url.com/logo.png)
 
-## Features
-Data Integration: Automatically fetches and integrates your Spotify listening history.
-Visualization: Generates visualization to display your listening habits over time.
+*A Python package for football tracking visualization and analytics.*
 
-## Installation 
+## 📌 Overview
+LigaFooty is a Python package designed for **football tracking visualization**, **player movement analysis**, and **possession-based statistics**. It provides easy-to-use functions for plotting football pitch events, animations, and team performance insights.
 
-### 1. Clone the Repository:
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+## 🔥 Features
+- ✅ **Football pitch visualization** using `mplsoccer`
+- ✅ **Player tracking & movement analysis**
+- ✅ **Ball possession detection**
+- ✅ **Animations of player positions**
+- ✅ **Convex hull, Voronoi, and Delaunay triangulation visualizations**
+- ✅ **Customizable pitch themes & team colors**
 
-### 2. Set Up a Virtual Environment (optional but recommended):
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+## 📦 Installation
+Install LigaFooty using pip:
 
-### 3. Install Dependencies:
-pip install -r requirements.txt
+```sh
+pip install git+https://github.com/ligandro/Liga.Footy.git
+```
 
+## 🚀 Getting Started
+### 1️⃣ Import LigaFooty
 
-## How It Works
-The script uses the Spotipy API to get your recent song listening data. It allows us to get only the latest 50 so we have set up a csv file to continuously store the data. This means you will have to routinely run the script to keep your data accurate. We then use Matplotlib to plot your top 10 most listened songs.
+```python
+import LigaFooty
+```
 
-## Usage
-Run the Script:
+### 2️⃣ Example Usage
+#### **Plot Player Tracking Data**
 
-python main.py --client_id "your_client_id" --client_secret "your_client_secret" --redirect_uri "your_redirect_uri"
+```python
+from LigaFooty import liga_plot_poss
 
-Client ID, Client Secret can be obtained from Spotify Developers website.  You cam use this video as reference https://youtu.be/0fhkkkRuUxw
+liga_plot_poss(tidy_data, event_data, target_team='home')
+```
 
-##  Contributing and Contact
-Contributions are welcome! This project was mainly inspired by https://receiptify.herokuapp.com/#google_vignette. I don't know how to set up the web login for each user and also getting the full listening history yet. If you have any questions or suggestions, feel free to open an issue or contact me at my twitter. 
+#### **Animate a Range of Frames**
 
-## License
-MIT License
+```python
+from LigaFooty import liga_animate
+
+liga_animate(tidy_data, poss_data, frame_start=1000, frame_end=1050)
+```
+
+#### **Compute Team Stats**
+
+```python
+from LigaFooty import calculate_team_stats
+
+width, defensive_line, def_height = calculate_team_stats(team_df, 'home')
+```
+
+## 📜 Available Functions
+- `liga_plot_poss(tidy_data, ed, target_team, ...)` → Plots possession-based tracking.
+- `liga_animate(tidy_data, poss_data, frame_start, frame_end, ...)` → Generates animations.
+- `calculate_team_stats(team_df, team_name)` → Computes pitch width and defensive line stats.
+- `team_possession(frame, possession_df)` → Determines which team has possession.
+- `player_possession(frame_data)` → Finds which player has the ball.
+- `plot_voronoi_viz(frame_df, pitch, ax, team_colors)` → Creates a Voronoi diagram.
+
+## 🛠 Dependencies
+LigaFooty requires the following packages:
+
+```sh
+pip install numpy pandas matplotlib mplsoccer highlight_text
+```
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit (`git commit -m "Add new feature"`).
+4. Push to your branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## 📄 License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## 🌟 Support & Contact
+For any questions or feature requests, feel free to reach out:
+
+📧 Email: ligandro@example.com  
+🐦 Twitter: [@Ligandro22](https://twitter.com/Ligandro22)
 
