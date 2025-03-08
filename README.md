@@ -182,6 +182,12 @@ frame_end =sprint_frame[1]
 liga_sprint_animate(tidy_data,poss_data,target_player,frame_start,frame_end)
 ```
 ![LigaFooty Animation](videos/15_sprint_animation.gif)
+
+## Note 
+- Home team always attacks from right to left while Away from left to right
+- Default pitch Opta 100 by 100
+- To save as video you need to have ffpmeg writer on your system
+- There will be multiple frames without ball in play. Theres only about 35-40% of frames where the ball is in play
 ## 🛠 Dependencies
 ligafooty requires the following packages:
 
