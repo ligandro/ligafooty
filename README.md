@@ -185,6 +185,7 @@ liga_sprint_animate(tidy_data,poss_data,target_player,frame_start,frame_end)
 
 ## Note 
 - Home team always attacks from right to left while Away from left to right
+- I have set the font to Century Gothic by default which may not be available on a non-windows system. Will add font as a a paramater soon.
 - Default pitch Opta 100 by 100
 - To save as video you need to have ffpmeg writer on your system
 - There will be multiple frames without ball in play. Theres only about 35-40% of frames where the ball is in play
