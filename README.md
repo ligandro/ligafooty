@@ -68,7 +68,7 @@ from ligafooty.liga import liga_frame
 liga_frame(tidy_data,330,poss_data,method="base",save=False) # Saved as frame_xyz.png in images folder
 ```
 <p align="center">
-  <img width="100%" src="./images/frame_330.png"> &nbsp &nbsp
+  <img width="100%" src="./images/frame_330.jpg"> &nbsp &nbsp
 </p>
 ### 4. 2D animation for a range of frames
 
@@ -81,6 +81,7 @@ frame_end =121060
 # On avg it takes 1 second to process 2-3 frames. So keep in mind to process 50-100 at once. 25 frames make up 1 second of video
 liga_animate(tidy_data,poss_data,frame_start,frame_end,mode='voronoi',video_writer="gif",save=True) # Saved as animation.gif in videos folder
 ```
+![LigaFooty Animation](videos/animation.gif)
 
 ### 5. Team avg. positioning and stats by ON/OFF ball possession states
 
@@ -89,7 +90,9 @@ from ligafooty.liga import liga_plot_poss
 
 liga_plot_poss(tidy_data, poss_data, target_team ="away",save=True) # saved as team_possession.png in images folder
 ```
-
+<p align="center">
+  <img width="100%" src="./images/away_possession.png"> &nbsp &nbsp
+</p>
 ### 6. Player heatmap by ON/OFF ball possession states
 
 ```python
@@ -99,7 +102,13 @@ from ligafooty.liga import liga_player_heatmap
 # Tales around 3 mins to run as it plots for each frame. Avg of 50k frames per player for both on/off
 liga_player_heatmap(tidy_data,poss_data, target_team="away", target_player=20)
 ```
+<p align="center">
+  <img width="100%" src="./images/20_ip.png"> &nbsp &nbsp
+</p>
 
+<p align="center">
+  <img width="100%" src="./images/20_op.png"> &nbsp &nbsp
+</p>
 ### 7.Player movement stats calculation and visualization
 
 ```python
@@ -107,12 +116,21 @@ from ligafooty.liga import player_movement_stats
 
 player_stats = player_movement_stats(tidy_data, save= True)
 ```
+<p align="center">
+  <img width="100%" src="./images/away_player_table.png"> &nbsp &nbsp
+</p>
+
 
 ```python
 from ligafooty.liga import liga_player_stats_graph
 
 liga_player_stats_graph(player_stats,team="home",save = True)  # Saved as {team}_player_speed_graph.png in images folder
 ```
+
+<p align="center">
+  <img width="100%" src="./images/home_player_speed_graph.png"> &nbsp &nbsp
+</p>
+
 ### 8. Player Sprints Info and Vizualization
 
 ```python
@@ -128,6 +146,11 @@ from ligafooty.liga import liga_plot_player_sprints
 
 liga_plot_player_sprints(tidy_data,sprints_data,target_team,target_player=19,save=True) # Saved as player_{number}_sprints.png in images folder
 ```
+
+<p align="center">
+  <img width="100%" src="./images/player_19_sprints.png"> &nbsp &nbsp
+</p>
+
 ### 9.Player animation highlighting a particular sprint
 
 ```python
@@ -148,8 +171,7 @@ frame_end =sprint_frame[1]
 # Saved as {target_player}_sprint_animation.gif in videos folder
 liga_sprint_animate(tidy_data,poss_data,target_player,frame_start,frame_end)
 ```
-
-
+![LigaFooty Animation](videos/15_sprint_animation.gif)
 ## 🛠 Dependencies
 ligafooty requires the following packages:
 
