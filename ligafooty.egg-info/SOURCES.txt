@@ -1,9 +1,5 @@
 README.md
 setup.py
-ligafooty/__init__.py
-ligafooty/helpers.py
-ligafooty/liga.py
-ligafooty/plotters.py
 ligafooty.egg-info/PKG-INFO
 ligafooty.egg-info/SOURCES.txt
 ligafooty.egg-info/dependency_links.txt

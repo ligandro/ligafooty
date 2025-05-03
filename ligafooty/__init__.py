@@ -1,1 +1,0 @@
-from .liga import get_tidy_data
