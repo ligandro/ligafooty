@@ -46,7 +46,7 @@ pip install git+https://github.com/ligandro/ligafooty.git
 ### 2D static plot for a single frame
 
 <p align="center">
-  <img width="100%" src="./images/frame_330.jpg"> &nbsp &nbsp
+  <img width="100%" src="./images/frame_99990.jpg"> &nbsp &nbsp
 </p>
 
 ###  2D animation for a range of frames
@@ -62,11 +62,11 @@ pip install git+https://github.com/ligandro/ligafooty.git
 ### Player heatmap by ON/OFF ball possession states
 
 <p align="center">
-  <img width="100%" src="./images/20_ip.png"> &nbsp &nbsp
+  <img width="100%" src="./images/13-ip.png"> &nbsp &nbsp
 </p>
 
 <p align="center">
-  <img width="100%" src="./images/20_op.png"> &nbsp &nbsp
+  <img width="100%" src="./images/13-op.png"> &nbsp &nbsp
 </p>
 
 ### Player movement stats calculation and visualization
@@ -89,7 +89,7 @@ pip install git+https://github.com/ligandro/ligafooty.git
 
 ### Player animation highlighting a particular sprint ( Supported for Metrica Data )
 
-![LigaFooty Animation](videos/15_sprint_animation.gif)
+![LigaFooty Animation](videos/4_sprint_animation.gif)
 
 ## Note 
 - Home team always attacks from right to left while Away from left to right
