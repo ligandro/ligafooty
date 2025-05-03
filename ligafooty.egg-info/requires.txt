@@ -5,3 +5,4 @@ mplsoccer
 highlight_text
 scipy
 pillow
+kloppy
